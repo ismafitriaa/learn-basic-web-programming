@@ -6,6 +6,10 @@ body {
     padding: 0;
 }
 
+header {
+    display: inline;
+}
+
 main {
     padding: 20px;
     overflow: auto;
@@ -73,6 +77,8 @@ nav li {
 nav {
     background-color: #00a2c6;
     padding: 5px;
+    position: sticky;
+    top: 0;
 }
 
 #content {
@@ -88,4 +94,12 @@ aside {
 
 * {
     box-sizing: border-box;
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+      width: 100%;
+      padding: 0;
+    }
 }
